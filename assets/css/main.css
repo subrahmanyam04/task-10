@@ -1,0 +1,191 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nbar{
+    background-color:antiquewhite;
+    /* opacity: 0.8; */
+}
+
+body{
+  font-family: sans-serif;
+}
+
+
+/* slider */
+.slider {
+    height: 500px;
+}
+
+/* slider-cards */
+.slide-card {
+    width: 280px;
+    background-color: whitesmoke !important;
+    border: 1px solid black;
+    
+    border-radius: 5px;
+}
+
+
+
+
+/* slider-arrows */
+.arrow {
+    width: 40px;
+    height: 40px;
+   
+}
+
+.tag{
+    background-color: lightgrey;
+    border: 0.5px solid grey;
+}
+
+
+/* Add your preferred styling for the gallery here */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap:30px
+  }
+
+  .gallery img{
+    width: 90%;
+    border-radius: 10px;
+    
+}
+
+.gallery img:hover{
+  box-shadow: 0px 0px 15px orange;
+  
+  
+}
+
+
+  /* Lightbox styles */
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+ 
+  
+  
+  .lightbox-image {
+    max-width: 95%;
+    max-height: 75%;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    border-radius: 15px;
+    border: 2px solid blueviolet;
+    box-shadow: 0px 0px 5px blue;
+
+    transform: translate(-50%, -50%);
+  }
+  
+  .close-btn {
+    position: absolute  ;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  
+  .lightbox-title {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+
+  /* magnifier */
+
+
+/* Style the product image container */
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Style the magnifier container */
+.magnifier {
+  position: relative;
+  display: none;
+  border: 2px solid #ccc;
+  cursor: zoom-in;
+}
+
+/* Style the magnified portion of the image */
+.magnified-image {
+  width: 200%;
+  height: 200%;
+}
+
+
+/* starrating */
+.fa-star.starrate {
+  font-size: 25px; /* Increase the star size as desired */
+
+}
+
+.star-selected{
+  color: yellow;
+}
+
+
+
+input{
+  /* opacity: 0.7 !important; */
+  border: 2px solid black !important;
+  
+  /* background-color: rgba(255,255, 255, 0.8) !important;
+  box-shadow: 5px 5px 0.3px rgba(255,255, 255, 0.3); */
+}
+
+textarea{
+  /* opacity: 0.7 !important; */
+  border: 2px solid black !important;
+}
+
+input::placeholder{
+  font-weight: 800px !important;
+  color:rgb(165, 153, 42) !important;
+  
+  
+}
+
+textarea::placeholder{
+  font-weight: 800px !important;
+  color:rgb(165, 153, 42) !important;
+}
+
+.mix{
+  margin-top: 500px !important;
+}
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+

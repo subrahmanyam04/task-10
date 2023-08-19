@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon1.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+  </head>
+  <body >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg  p-2 fixed-top nbar">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler bg-body-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+        <li class="nav-item p-2">
+          <a class="nav-link  font-monospace link-primary" data-toggle="tooltip" title="Home" aria-current="page" href=".\index.html">Home</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="About" href=".\about.html" target="_self"> About</a>
+        </li> 
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="Catagories" href=".\catagory.html" target="_self"> Catagories</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="Cart" href=".\cart.html" target="_self"> Cart</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link active font-monospace link-info" data-toggle="tooltip" title="Account" href=".\account.html" target="self"> Account</a>
+        </li>
+      </ul>
+     
+    </div>
+  </div>
+</nav>
+
+<!-- nav bar ending -->
+
+<!-- form -->
+
+<div class="container  mt-5 p-5">
+ 
+  <form class="p-3  bg-light">
+    
+   <h3 class="text-center">FeedBack</h3>
+   <br>
+
+    <div class="row g-3">
+
+      <!-- name -->
+      <div class="col-md-8">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control " id="username" placeholder="enter your name Example@1">
+        <span id="name" class="text-danger"></span>
+        <span id="valid1" class="text-success"></span>
+      </div>
+
+    <!-- pnumber -->
+  <div class="col-md-8">
+      <label class="form-label">Phone Number</label>
+      <input type="number" class="form-control" id="pnum" placeholder="enter your mobile number">
+      <span class="text-danger" id="phone"></span>
+      <span id="valid4" class="text-success"></span>
+    </div>
+
+
+     <!-- dearch -->
+<div class="col-md-8">
+  <label class="form-label mt-2">Favourite Product</label>
+  <input class="form-control " id="tags" type="text" placeholder="Search" aria-label="Search">
+  <span class="text-danger" id="fav"></span>
+  <span id="valid5" class="text-success"></span>
+
+</div>
+
+ <!-- rating -->
+<div class="col-md-8">
+      
+       <label class="form-label mt-2" id="rating" value="0 out of 5">Rate Us</label>
+       <div>
+         
+         <i class = "fa fa-star starrate" aria-hidden = "true" id = "s1" value="1 out of 5"></i>
+          <i class = "fa fa-star starrate " aria-hidden = "true" id = "s2" value="2 out of 5"></i>
+          <i class = "fa fa-star starrate " aria-hidden = "true" id = "s3" value="3 out of 5"></i>
+          <i class = "fa fa-star starrate " aria-hidden = "true" id = "s4" value="4 out of 5"></i>
+          <i class = "fa fa-star starrate " aria-hidden = "true" id = "s5" value="5 out of 5"></i>
+          </div>
+
+</div>
+
+<!-- feedback -->
+<div class="col-md-8">
+<label for="inputMessage" class="form-label mt-2">FeedBack</label>
+<textarea class="form-control " id="inputMessage" rows="4" placeholder="Enter your message..."></textarea>
+<span class="text-danger" id="feed"></span>
+  <span id="valid6" class="text-success"></span>
+</div>
+
+       <!--submit  -->
+<div class="col-md-6 mt-3">
+  <!-- <input type="submit" value="Submit" id="submitButton"> -->
+  <button type="button" class="btn btn-primary"   id="submitButton" onsubmit="form()">
+    submit
+   </button>
+   <span id="checkerror" class="text-danger"></span>
+</div>
+</div> 
+<!-- row close -->
+
+</form> 
+<!--form close  -->
+
+
+</div>
+<!-- container close -->
+
+
+
+
+   <!-- modal -->
+   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">NOTIFICATION</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-success" id="modal">
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" id="ok">done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+      <script src="./assets/js/main.js"></script>
+
+<!--footer  -->
+
+<div class="nbar">
+  <footer class="footer p-3">
+    
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h4>Company</h4>
+        <p>About Us</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Services</h4>
+        <p>Products</p>
+        <p>Selling</p>
+        <p>Customer Services</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Follow Us</h4>
+       
+        <!-- <ul class="">
+          <li><a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/fb.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/insta.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-success link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/whatsapp.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/twiter.png" height="30px" alt=""></a></li>
+        </ul> -->
+        <div class="social-links  mt-2 mb-2 ">
+          
+          <a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/fb.png" height="30px" alt=""></a>
+          <a href="#" class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/insta.png" height="30px" alt=""></a>
+          <a href="#" class="link-success link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/whatsapp.png" height="30px" alt=""></a>
+          <a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/twiter.png" height="30px" alt=""></a>
+        
+      </div>
+    </div>
+    <div class="row ms-1">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- footer ending -->
+
+
+</body>
+</html>

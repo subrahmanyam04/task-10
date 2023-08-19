@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon1.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+</head>
+<body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg  p-2 fixed-top nbar">
+  <div class="container-fluid">
+    
+    <button class="navbar-toggler tag" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon "></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5">
+        <li class="nav-item p-2">
+          <a class="nav-link  font-monospace link-primary" data-toggle="tooltip" title="Home" aria-current="page" href=".\index.html">Home</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link active font-monospace link-info" data-toggle="tooltip" title="About" href=".\about.html" target="_self"> About</a>
+        </li> 
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="Catagories" href=".\catagory.html" target="_self"> Catagories</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="Cart" href=".\cart.html" target="_self"> Products</a>
+        </li>
+        <li class="nav-item p-2">
+          <a class="nav-link font-monospace link-primary" data-toggle="tooltip" title="Account" href=".\account.html" target="_self"> Account</a>
+        </li>
+      </ul>
+
+      
+     
+    </div>
+  </div>
+</nav>
+
+<!-- nav bar ending -->
+
+  <!-- Slider -->
+  <!-- <div class="container-fluid mt-5 "> -->
+  
+  <!-- <section class="mt-5 p-md-2 p-0 vh-50 ">
+    <h4 class="text-center text-primary mt-5 p-3">
+      About Us || Laptop Versions
+    </h4>
+  <div class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis modi commodi architecto</div>
+      
+    
+     <div class="container-fluid position-relative mt-2 "> -->
+  <!-- Cards Wrap -->
+  <!-- <div class="slider d-flex align-items-center justify-content-start overflow-hidden position-relative ">
+      <div class="slider-wrap d-flex align-items-center position-absolute "> -->
+        <!-- 1 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/11.jpg" alt="slide" width="94%" height="174px" class="m-2" style="border-radius: 5px;" >
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0001)</p>
+                      <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                        ullam natus. Repudiandae. 
+                          </p>
+                      <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p>
+                      <button class="btn btn-danger">Wish list</button>
+                  </div>
+              </a>
+          </div> -->
+          <!-- 2 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/12.jpeg" alt="slide" width="94%" height="170px" class="m-2" style="border-radius: 5px;">
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0002)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p>
+                              <button class="btn btn-danger">Wish list</button>                 
+                            </div>
+              </a>
+          </div> -->
+          <!-- 3 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/53.jpg" alt="slide" width="94%" height="170px" class="m-2" style="border-radius: 5px;" >
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0003)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p>
+                              <button class="btn btn-danger">Wish list</button>                    
+                            </div>
+              </a>
+          </div> -->
+          <!-- 4 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/15.jpg"  width="94%" height="170px" class="m-2 me-2" style="border-radius: 5px;" >
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0004)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p> 
+                              <button class="btn btn-danger">Wish list</button>                  
+                            </div>
+              </a>
+          </div> -->
+          <!-- 5 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/15.jpeg" alt="slide"  width="94%" height="170px" class="m-2" style="border-radius: 5px;">
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0005)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p> 
+                              <button class="btn btn-danger">Wish list</button>                 
+                             </div>
+              </a>
+          </div> -->
+          <!-- 6 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/10.jpeg" alt="slide"  width="94%" height="170px" class="m-2" style="border-radius: 5px;">
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0006)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p> 
+                              <button class="btn btn-danger">Wish list</button> 
+                            </div>
+              </a>
+          </div> -->
+          <!-- 7 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/10.jpg" alt="slide"  width="94%" height="170px" class="m-2" style="border-radius: 5px;">
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0007)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p> 
+                              <button class="btn btn-danger">Wish list</button>                  
+                            </div>
+              </a>
+          </div> -->
+          <!-- 8 -->
+          <!-- <div class="slide-card position-relative bg-white overflow-hidden shadow-sm mx-2">
+              <a href="#" class="text-decoration-none">
+                  <img src="./assets/images/16.jpg" alt="slide"  width="94%" height="170px" class="m-2" style="border-radius: 5px;">
+                  <div class="p-3">
+                      <p class="text-danger my-2 fs-5 fw-semibold">Asus Sries(0.0008)</p>
+                          <p class="text-dark">Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam
+                              ullam natus. Repudiandae.</p>
+                              <p class="text-muted mb-0 mt-3"><span class="text-success fs-5">Launched-on:</span> 18 Nov, 2022</p> 
+                              <button class="btn btn-danger">Wish list</button>                  
+                            </div>
+              </a>
+          </div>
+      </div>
+  </div> -->
+  <!-- Slider Arrows -->
+  <!-- Left Arrow -->
+  <!-- <a href="#" class="text-dark " id="previous-arrow">
+      <div
+          class="arrow bg-white d-flex align-items-center justify-content-center shadow-lg border rounded-circle position-absolute bottom-50 start-0">
+          <i class="fa fa-angle-left" aria-hidden="true"></i>
+      </div>
+  </a> -->
+  <!-- Right Arrow -->
+  <!-- <a href="#" class="text-dark" id="next-arrow">
+      <div
+          class="arrow bg-white d-flex align-items-center justify-content-center shadow-lg border rounded-circle position-absolute bottom-50 end-0">
+          <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </div>
+  </a>
+</div>
+  </section> -->
+
+  
+<!-- </div> -->
+
+
+
+<!-- developed using map function -->
+
+
+<section class="mt-5 p-md-2 p-0 vh-50 ">
+  <h4 class="text-center text-primary mt-5 p-3">
+    About Us || Laptop Versions
+  </h4>
+<div class=" text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit blanditiis modi commodi architecto</div>
+    
+  
+   <div class="container-fluid position-relative mt-2 ">
+<!-- Cards Wrap -->
+<div class="slider d-flex align-items-center justify-content-start overflow-hidden position-relative ">
+    <div  class="slider-wrap d-flex align-items-center position-absolute ">
+      <!-- 1 -->
+      <div id="cardContainer" class="d-flex ">
+           
+         <!-- card will be added dynamically here -->
+
+        </div>
+       
+    
+    </div>
+</div>
+<!-- Slider Arrows -->
+<!-- Left Arrow -->
+<a href="#" class="text-dark " id="previous-arrow">
+    <div
+        class="arrow bg-white d-flex align-items-center justify-content-center shadow-lg border rounded-circle position-absolute bottom-50 start-0">
+        <i class="fa fa-angle-left" aria-hidden="true"></i>
+    </div>
+</a>
+<!-- Right Arrow -->
+<a href="#" class="text-dark" id="next-arrow">
+    <div
+        class="arrow bg-white d-flex align-items-center justify-content-center shadow-lg border rounded-circle position-absolute bottom-50 end-0">
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+    </div>
+</a>
+</div>
+</section>
+
+
+
+<script>
+  const cardData = [
+      {
+          imageUrl: "./assets/images/11.jpg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+      // Add more card data objects as needed
+      {
+          imageUrl: "./assets/images/12.jpeg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/53.jpg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/15.jpg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/15.jpeg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/10.jpeg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/10.jpg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+      {
+          imageUrl: "./assets/images/16.jpg",
+          title: "Asus Sries(0.0001)",
+          description: "Lorem ipsum dolor sit amet consec isicing elit. Praesentium aperiam ullam natus. Repudiandae.",
+          launchDate: "18 Nov, 2022"
+      },
+
+  ];
+
+  const cardContainer = document.getElementById("cardContainer");
+
+  // Loop through the card data and create the card elements
+  cardData.map((card) => {
+    // console.table(card)
+      const cardElement = document.createElement("div");
+      cardElement.className = "slide-card position-relative bg-white overflow-hidden shadow-sm mx-2";
+      cardElement.innerHTML = `
+          <a href="#" class="text-decoration-none">
+              <img src="${card.imageUrl}" alt="slide" width="94%" height="174px" class="m-2" style="border-radius: 5px;">
+              <div class="p-3">
+                  <p class="text-danger my-2 fs-5 fw-semibold">${card.title}</p>
+                  <p class="text-dark">${card.description}</p>
+                  <p class="text-muted mb-0 mt-2"><span class="text-success fs-5">Launched-on:</span> ${card.launchDate}</p>
+                  <button class="btn btn-danger">Wish list</button>
+              </div>
+          </a>
+      `;
+      cardContainer.append(cardElement);
+  });
+</script>
+
+
+
+
+
+
+
+<!-- some information -->
+  
+<div class="container-fluid  mb-5 mt-1">
+  <div class="row ">
+    <div class="col">
+      <h3 class="text-center mt-2">Zenbook</h3>
+      <p class="text-left">The elegant Zenbook is compact, ultrathin and light, featuring the best laptop technology, NanoEdge displays, precision craftsmanship,
+           uncompromising performance, 
+          and innovation. It's designed to bring out the very best in you.NanoEdge displays, precision craftsmanship,
+          uncompromising performance, 
+         and innovation. It's designed to bring out the very best in you.</p>
+    </div>
+  </div>
+</div>
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+      <script src="./assets/js/main.js"></script>
+
+
+<!--footer  -->
+
+<div class="nbar">
+  <footer class="footer p-3">
+    
+    <div class="row text-center">
+      <div class="col-md-4">
+        <h4>Company</h4>
+        <p>About Us</p>
+        <p>Contact Us</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Services</h4>
+        <p>Products</p>
+        <p>Selling</p>
+        <p>Customer Services</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Follow Us</h4>
+       
+        <!-- <ul class="">
+          <li><a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/fb.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-danger link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/insta.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-success link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/whatsapp.png" height="30px" alt=""></a></li>
+          <li><a href="#" class="link-primary link-underline link-underline-opacity-0 link-underline-opacity-75-hover"><img src="./assets/images/twiter.png" height="30px" alt=""></a></li>
+        </ul> -->
+        <div class="social-links  mt-2 mb-2 ">
+          
+          <a href="" class="link-primary "><img src="./assets/images/fb.png" height="30px" alt=""></a>
+          <a href="" class="link-danger "><img src="./assets/images/insta.png" height="30px" alt=""></a>
+          <a href="" class="link-success "><img src="./assets/images/whatsapp.png" height="30px" alt=""></a>
+          <a href="" class="link-primary "><img src="./assets/images/twiter.png" height="30px" alt=""></a>
+        
+      </div>
+    </div>
+    <div class="row ms-1">
+      <div class="col-md-12 text-center">
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- footer ending -->
+
+    
+</body>
+</html>
